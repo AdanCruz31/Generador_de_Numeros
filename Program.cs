@@ -6,7 +6,25 @@ namespace Generador_de_numeros
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int op;
+
+            Console.Clear();
+
+            do
+            {
+                Console.WriteLine("Menu de Generadores");
+                Console.WriteLine("\n0 - salir.");
+                Console.WriteLine("1 - Cuadrados Medios.");
+                Console.Write("Ingrese una opcion a ejecutar: ");
+                op = int.Parse(Console.ReadLine());
+
+                switch (op)
+                {
+                    default:
+                        break;
+                }
+            }
+            while (op != 0);
         }
     }
 }
