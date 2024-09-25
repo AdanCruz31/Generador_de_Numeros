@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Generador de numeros")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+50d795453aec87990e22f5a2cd2aa71ac49e5be6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0a877ac037b7a09c7d9aec7f376596e8ae2537de")]
 [assembly: System.Reflection.AssemblyProductAttribute("Generador de numeros")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Generador de numeros")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

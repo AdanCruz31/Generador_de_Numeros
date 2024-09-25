@@ -22,6 +22,7 @@ namespace Generador_de_numeros
                     Console.WriteLine("\n0 - salir.");
                     Console.WriteLine("1 - Cuadrados Medios.");
                     Console.WriteLine("2 - Metodo de los productos medios.");
+                    Console.WriteLine("5 - Método Congruencial multiplicativo.");
                     Console.Write("Ingrese una opcion a ejecutar: ");
 
                     // Lee la opción ingresada por el usuario
@@ -35,7 +36,7 @@ namespace Generador_de_numeros
                             Console.Clear();
                             Console.WriteLine("\nGracias por ejecutar el gemerador de simulacion");
                             break;
-                        //Cuadrados medios
+                        // Cuadrados medios
                         case 1:
                             Console.Clear();
                             CuadradosMedios.Inicio();
@@ -44,7 +45,15 @@ namespace Generador_de_numeros
                             Console.Clear();
                             Metodo_de_los_productos_medios.Inicio();
                             break;
-                        //Mensaje por defecto 
+                        case 3:
+                            Console.Clear();
+                            break;
+                        // Método Congruencial multiplicativo
+                        case 5:
+                            Console.Clear();
+                            Generador_congruencial_multiplicativo.Inicio();
+                            break;
+                        // Mensaje por defecto 
                         default:
                             Console.Clear();
                             Console.WriteLine("Ingresa una opcion valida.\n");
