@@ -6,7 +6,6 @@ namespace Generador_de_numeros
 {
     public class CuadradosMedios
     {
-
         public static void Inicio()
         {
             // Se declaran las variables necesarias
@@ -35,6 +34,7 @@ namespace Generador_de_numeros
                     cuadradoX = semilla * semilla;
                     //Limpia la variable
                     CerosX = "";
+
                     // Verifica si la longitud del cuadrado no es válida según la función Condicion
                     if (cuadradoX.ToString().Length != 2 * (semilla.ToString().Length))
                     {
@@ -49,7 +49,7 @@ namespace Generador_de_numeros
                     }
 
                     // Convierte el cuadrado a una cadena
-                    cuadradoStr = cuadradoX.ToString();
+                    cuadradoStr = CerosX.ToString();
                     // Obtiene la longitud de la representación en cadena de la semilla
                     longitudX = semilla.ToString().Length;
                     // Calcula la posición de inicio para extraer los caracteres del cuadrado
@@ -58,6 +58,7 @@ namespace Generador_de_numeros
                     fin = inicio + longitudX;
                     // Extrae la subcadena centrada del cuadrado
                     caracteresMedio = cuadradoStr.Substring(inicio, longitudX);
+
                     // Convierte 'caracteresMedio' a entero y luego a decimal, dividiendo por 100.0
                     if (int.Parse(caracteresMedio) < 100.0)
                     {
@@ -67,6 +68,7 @@ namespace Generador_de_numeros
                     {
                         numeroDecimal = int.Parse(caracteresMedio) / 10000.00;
                     }
+
                     // Imprime la información de Cuadrados Medios
                     Console.WriteLine($"\nContador: {i} \nSemilla: {semilla} \nCuadrado de la semilla: {CerosX} \nNueva Semilla: {caracteresMedio} \nNumero Generado: {numeroDecimal}\n");
                     // Actualiza la semilla con el nuevo valor
@@ -82,10 +84,14 @@ namespace Generador_de_numeros
             }
             else
             {
-                // Limpia la consola para un visual limpio
-                Console.Clear();
                 // Muestra un mensaje de error indicando que la longitud de la semilla debe ser un entero
-                Console.WriteLine("La cantidad de cifras debe de ser entero para la semilla");
+                Console.WriteLine("\nLa cantidad de cifras debe de ser entero para la semilla");
+                // Muestra un mensaje para que el usuario presione ENTER para salir
+                Console.Write("\nPrecione ENTER para salir.");
+                // Espera a que el usuario presione ENTER
+                Console.ReadLine();
+                // Limpia la consola
+                Console.Clear();
             }
 
         }
