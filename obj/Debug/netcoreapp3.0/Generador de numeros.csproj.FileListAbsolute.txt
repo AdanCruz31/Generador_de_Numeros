@@ -1,0 +1,14 @@
+F:\Generador_de_Numeros\bin\Debug\netcoreapp3.0\Generador de numeros.exe
+F:\Generador_de_Numeros\bin\Debug\netcoreapp3.0\Generador de numeros.deps.json
+F:\Generador_de_Numeros\bin\Debug\netcoreapp3.0\Generador de numeros.runtimeconfig.json
+F:\Generador_de_Numeros\bin\Debug\netcoreapp3.0\Generador de numeros.runtimeconfig.dev.json
+F:\Generador_de_Numeros\bin\Debug\netcoreapp3.0\Generador de numeros.dll
+F:\Generador_de_Numeros\bin\Debug\netcoreapp3.0\Generador de numeros.pdb
+F:\Generador_de_Numeros\obj\Debug\netcoreapp3.0\Generador de numeros.GeneratedMSBuildEditorConfig.editorconfig
+F:\Generador_de_Numeros\obj\Debug\netcoreapp3.0\Generador de numeros.AssemblyInfoInputs.cache
+F:\Generador_de_Numeros\obj\Debug\netcoreapp3.0\Generador de numeros.AssemblyInfo.cs
+F:\Generador_de_Numeros\obj\Debug\netcoreapp3.0\Generador de numeros.csproj.CoreCompileInputs.cache
+F:\Generador_de_Numeros\obj\Debug\netcoreapp3.0\Generador de numeros.sourcelink.json
+F:\Generador_de_Numeros\obj\Debug\netcoreapp3.0\Generador de numeros.dll
+F:\Generador_de_Numeros\obj\Debug\netcoreapp3.0\Generador de numeros.pdb
+F:\Generador_de_Numeros\obj\Debug\netcoreapp3.0\Generador de numeros.genruntimeconfig.cache

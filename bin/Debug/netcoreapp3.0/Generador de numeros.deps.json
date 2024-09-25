@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "Generador de numeros/1.0.0": {
+        "runtime": {
+          "Generador de numeros.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Generador de numeros/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
