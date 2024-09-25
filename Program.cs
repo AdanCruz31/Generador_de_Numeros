@@ -16,7 +16,7 @@ namespace Generador_de_numeros
                 //UN DO WHILE PARA INTERACTUAR CON EL MENU
                 do
                 {
-                    Console.WriteLine("Menu de Generadores");
+                    Console.WriteLine("\tMenu de Generadores");
                     Console.WriteLine("\n0 - salir.");
                     Console.WriteLine("1 - Cuadrados Medios.");
                     Console.Write("Ingrese una opcion a ejecutar: ");
@@ -32,6 +32,8 @@ namespace Generador_de_numeros
                             break;
                         //CUADRADOS MEDIOS
                         case 1:
+                            Console.Clear();
+                            CuadradosMedios.Inicio();
                             break;
                         //MENSAJE POR DEFECTO 
                         default:
