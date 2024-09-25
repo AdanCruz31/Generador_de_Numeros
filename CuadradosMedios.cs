@@ -12,17 +12,17 @@ namespace Generador_de_numeros
             // Se declaran las variables necesarias
             int cantNum, semilla, cuadradoX, canCeros, longitudX, inicio, fin;
             string CerosX = "", cuadradoStr, caracteresMedio;
-            double numeroDecimal;
+            double numeroDecimal = 0.0;
 
             // Se muestra un encabezado en la consola
             Console.WriteLine("\tCuadrados Medios\n");
 
             // Se solicita al usuario la cantidad de números que desea generar
-            Console.Write("Cunatos numeros deceas generar? ");
+            Console.Write("Cuántos números quieres que se generen: ");
             cantNum = int.Parse(Console.ReadLine());
 
             // Se solicita al usuario que ingrese el valor de la semilla
-            Console.Write("Ingresa el valor de la semilla: ");
+            Console.Write("Por favor, ingresa el valor de la semilla que deseas utilizar: ");
             semilla = int.Parse(Console.ReadLine());
 
             // Se verifica si la longitud de la semilla es válida
@@ -33,14 +33,19 @@ namespace Generador_de_numeros
                 {
                     // Calcula el cuadrado de la semilla
                     cuadradoX = semilla * semilla;
-
+                    //Limpia la variable
+                    CerosX = "";
                     // Verifica si la longitud del cuadrado no es válida según la función Condicion
-                    if (!Condicion(cuadradoX.ToString().Length))
+                    if (cuadradoX.ToString().Length != 2 * (semilla.ToString().Length))
                     {
                         // Si la longitud no es válida, se calcula cuántos ceros se necesitan
                         canCeros = 2 * semilla.ToString().Length;
                         // Se convierte el cuadrado a una cadena con ceros a la izquierda, según canCeros
                         CerosX = cuadradoX.ToString($"D{canCeros}");
+                    }
+                    else
+                    {
+                        CerosX = cuadradoX.ToString();
                     }
 
                     // Convierte el cuadrado a una cadena
@@ -54,9 +59,16 @@ namespace Generador_de_numeros
                     // Extrae la subcadena centrada del cuadrado
                     caracteresMedio = cuadradoStr.Substring(inicio, longitudX);
                     // Convierte 'caracteresMedio' a entero y luego a decimal, dividiendo por 100.0
-                    numeroDecimal = int.Parse(caracteresMedio) / 100.0;
+                    if (int.Parse(caracteresMedio) < 100.0)
+                    {
+                        numeroDecimal = int.Parse(caracteresMedio) / 100.0;
+                    }
+                    else
+                    {
+                        numeroDecimal = int.Parse(caracteresMedio) / 10000.00;
+                    }
                     // Imprime la información de Cuadrados Medios
-                    Console.WriteLine($"\nContador: {i} \nSemilla: {semilla} \nCuadrado de la semilla: {cuadradoX} \nNueva Semilla: {caracteresMedio} \nNumero Generado: {numeroDecimal}\n");
+                    Console.WriteLine($"\nContador: {i} \nSemilla: {semilla} \nCuadrado de la semilla: {CerosX} \nNueva Semilla: {caracteresMedio} \nNumero Generado: {numeroDecimal}\n");
                     // Actualiza la semilla con el nuevo valor
                     semilla = int.Parse(caracteresMedio);
                 }
