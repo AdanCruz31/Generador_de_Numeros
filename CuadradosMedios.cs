@@ -10,17 +10,32 @@ namespace Generador_de_numeros
         public static void Inicio()
         {
             Console.WriteLine("\tCuadrados medios\n");
-            int cant = 0, semilla = 0;
+            int cant, semilla, izq, semilla2, canCeros;
+            string semillaConCeros = "" ;
 
-            Console.Write("Cuantos numeros deceas generar: ");
+            Console.Write("Cuántos números deseas generar: ");
             cant = int.Parse(Console.ReadLine());
 
             Console.Write("Ingresa el valor de la semilla: ");
             semilla = int.Parse(Console.ReadLine());
 
-            if (Condicion(semilla))
+            if (Condicion(semilla.ToString().Length))
             {
-                
+                for (int i = 0; i < cant; i++)
+                {
+                    semilla2 = semilla * semilla;
+
+                    if (!Condicion(semilla2.ToString().Length))
+                    {
+                        canCeros = 2 * semilla.ToString().Length;
+                        semillaConCeros = semilla2.ToString($"D{canCeros}");
+                    }
+
+                }
+            }
+            else
+            {
+                Console.WriteLine("La semilla no cumple con la condición.");
             }
         }
 
